@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package(Qt5Widgets REQUIRED)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp GameWidget.cpp GameWidget.h)
 add_executable(arkan9 ${SOURCE_FILES})
 target_link_libraries(arkan9 Qt5::Widgets)
