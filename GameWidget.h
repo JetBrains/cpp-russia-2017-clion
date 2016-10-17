@@ -16,5 +16,7 @@ protected:
 private:
     Ball b_;
     std::vector<Brick> bricks_;
+
+    void processCollisions();
 };
 

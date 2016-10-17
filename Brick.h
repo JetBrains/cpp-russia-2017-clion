@@ -8,8 +8,12 @@ struct Brick : GameObject {
 
     void draw(QPainter& p) override;
 
+    QRectF aabb() const override;
+
 private:
     double width_;
     double height_;
+
+    QRectF getRect() const;
 };
 

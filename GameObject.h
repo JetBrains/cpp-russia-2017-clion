@@ -12,9 +12,11 @@ struct GameObject {
 
     const QPointF& getSpeed() const;
 
+    void calc(int msec);
+
     virtual void draw(QPainter& p)= 0;
 
-    void calc(int msec);
+    virtual QRectF aabb() const = 0;
 
 private:
     QPointF pos_;

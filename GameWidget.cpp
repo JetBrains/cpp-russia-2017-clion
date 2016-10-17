@@ -1,4 +1,5 @@
 #include "GameWidget.h"
+#include "Collisions.h"
 #include <QTimer>
 
 #define WND_WIDTH 800
@@ -27,6 +28,7 @@ GameWidget::GameWidget(QWidget* parent) :
 }
 
 void GameWidget::calc(int ms) {
+    processCollisions();
     b_.calc(ms);
     for (auto&& brick : bricks_) {
         brick.calc(ms);
@@ -41,5 +43,16 @@ void GameWidget::paintEvent(QPaintEvent* event) {
     b_.draw(painter);
     for (auto&& brick : bricks_) {
         brick.draw(painter);
+    }
+}
+
+void GameWidget::processCollisions() {
+    if (applyCollision(b_, getCollisionWithWalls(b_, rect()))) return;
+
+    for (auto iter = bricks_.begin(); iter != bricks_.end(); ++iter) {
+        if (applyCollision(b_, getCollisionWithBrick(b_, iter->aabb()))) {
+            bricks_.erase(iter);
+            return;
+        }
     }
 }
