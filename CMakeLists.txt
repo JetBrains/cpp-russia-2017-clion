@@ -11,3 +11,7 @@ target_link_libraries(arkan9Lib Qt5::Widgets)
 set(SOURCE_FILES main.cpp GameWidget.cpp GameWidget.h)
 add_executable(arkan9 ${SOURCE_FILES})
 target_link_libraries(arkan9 arkan9Lib)
+
+add_subdirectory(3rdparty/googletest)
+add_executable(arkan9Test test.cpp)
+target_link_libraries(arkan9Test gtest arkan9Lib)
