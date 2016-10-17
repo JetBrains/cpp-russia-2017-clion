@@ -5,6 +5,9 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package(Qt5Widgets REQUIRED)
 
-set(SOURCE_FILES main.cpp GameWidget.cpp GameWidget.h Ball.cpp Ball.h GameObject.cpp GameObject.h Brick.cpp Brick.h Collisions.cpp Collisions.h)
+add_library(arkan9Lib Ball.cpp Ball.h GameObject.cpp GameObject.h Brick.cpp Brick.h Collisions.cpp Collisions.h)
+target_link_libraries(arkan9Lib Qt5::Widgets)
+
+set(SOURCE_FILES main.cpp GameWidget.cpp GameWidget.h)
 add_executable(arkan9 ${SOURCE_FILES})
-target_link_libraries(arkan9 Qt5::Widgets)
+target_link_libraries(arkan9 arkan9Lib)
