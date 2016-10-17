@@ -13,9 +13,12 @@ struct GameWidget : public QWidget {
 protected:
     void paintEvent(QPaintEvent* event) override;
 
+    void keyPressEvent(QKeyEvent* event) override;
+
 private:
     Ball b_;
     std::vector<Brick> bricks_;
+    Brick paddle_;
 
     void processCollisions();
 };

@@ -1,13 +1,15 @@
 #include "GameWidget.h"
 #include "Collisions.h"
 #include <QTimer>
+#include <QKeyEvent>
 
 #define WND_WIDTH 800
 
 #define WND_HEIGHT (WND_WIDTH / 4 * 3)
 
 GameWidget::GameWidget(QWidget* parent) :
-        QWidget(parent), b_(QPointF(WND_WIDTH / 2, WND_HEIGHT - 30), QPointF(200, -200)) {
+        QWidget(parent), b_(QPointF(WND_WIDTH / 2, WND_HEIGHT - 30), QPointF(200, -200)),
+        paddle_(QPointF(WND_WIDTH / 2, WND_HEIGHT - 10), 60, 20) {
     setFixedSize(WND_WIDTH, WND_HEIGHT);
     auto timer = new QTimer(this);
     const int ms = 20;
@@ -33,6 +35,7 @@ void GameWidget::calc(int ms) {
     for (auto&& brick : bricks_) {
         brick.calc(ms);
     }
+    paddle_.calc(ms);
     update();
 }
 
@@ -44,6 +47,7 @@ void GameWidget::paintEvent(QPaintEvent* event) {
     for (auto&& brick : bricks_) {
         brick.draw(painter);
     }
+    paddle_.draw(painter);
 }
 
 void GameWidget::processCollisions() {
@@ -54,5 +58,22 @@ void GameWidget::processCollisions() {
             bricks_.erase(iter);
             return;
         }
+    }
+
+    if (applyCollision(b_, getCollisionWithBrick(b_, paddle_.aabb()))) return;
+}
+
+void GameWidget::keyPressEvent(QKeyEvent* event) {
+    QWidget::keyPressEvent(event);
+
+    switch (event->key()) {
+        case Qt::Key_Left:
+            paddle_.setPos(paddle_.getPos() - QPointF(20, 0));
+            break;
+        case Qt::Key_Right:
+            paddle_.setPos(paddle_.getPos() + QPointF(20, 0));
+            break;
+        default:
+            break;
     }
 }
