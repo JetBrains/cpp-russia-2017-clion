@@ -15,3 +15,11 @@ const QPointF& GameObject::getSpeed() const {
 void GameObject::calc(int msec) {
     pos_ += speed_ * (msec / 1000.);
 }
+
+void GameObject::setPos(const QPointF& pos) {
+    pos_ = pos;
+}
+
+void GameObject::setSpeed(const QPointF& speed) {
+    speed_ = speed;
+}

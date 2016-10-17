@@ -12,6 +12,10 @@ struct GameObject {
 
     const QPointF& getSpeed() const;
 
+    void setPos(const QPointF& pos);
+
+    void setSpeed(const QPointF& speed);
+
     void calc(int msec);
 
     virtual void draw(QPainter& p)= 0;
