@@ -1,6 +1,5 @@
 #include "GameWidget.h"
 #include <QTimer>
-#include <QPainter>
 
 #define WND_WIDTH 800
 

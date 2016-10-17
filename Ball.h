@@ -1,21 +1,11 @@
 #pragma once
 
 
-#include <QPointF>
-#include <QPainter>
+#include "GameObject.h"
 
-struct Ball {
+struct Ball : public GameObject {
     Ball(const QPointF& pos, const QPointF& speed);
 
-    const QPointF& getPos() const;
-
-    const QPointF& getSpeed() const;
-
-    void draw(QPainter& p);
-    void calc(int msec);
-
-private:
-    QPointF pos_;
-    QPointF speed_;
+    void draw(QPainter& p) override;
 };
 
