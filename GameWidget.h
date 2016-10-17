@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "Ball.h"
+#include "Brick.h"
 
 struct GameWidget : public QWidget {
     GameWidget(QWidget* parent);
@@ -14,5 +15,6 @@ protected:
 
 private:
     Ball b_;
+    std::vector<Brick> bricks_;
 };
 
