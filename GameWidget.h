@@ -2,6 +2,7 @@
 
 
 #include <QWidget>
+#include "Ball.h"
 
 struct GameWidget : public QWidget {
     GameWidget(QWidget* parent);
@@ -10,5 +11,8 @@ struct GameWidget : public QWidget {
 
 protected:
     void paintEvent(QPaintEvent* event) override;
+
+private:
+    Ball b_;
 };
 
