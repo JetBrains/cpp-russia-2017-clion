@@ -5,6 +5,7 @@
 #include "Ball.h"
 #include "Brick.h"
 
+//TODO: Document class
 struct GameWidget : public QWidget {
     GameWidget(QWidget* parent);
 

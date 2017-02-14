@@ -14,7 +14,7 @@ Simply get a copy of the repo – clone or download straight. You can also use C
 
 How the exercises are structured:
 
-* tbd
+* `Navigation`: Learn how to navigate around the codebase using CLion, looking at Go To, Find Usages, File Structure, various Hierarchies and more.
 
 ## Open Source
 
