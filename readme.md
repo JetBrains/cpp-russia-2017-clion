@@ -6,7 +6,7 @@ Each exercise also introduces the keyboard shortcuts that can be used to work wi
 
 ## Getting Started
 
-Simply get a copy of the repo – clone or download straight. You can also use CLion built-in VCS support and do the following:
+Simply get a copy of the repo – clone or download straight. You can also use CLion's built-in VCS support and do the following:
 * Go to _VCS | Checkout from Version Control | GitHub_
 * Paste repository URL: https://github.com/JetBrains/clion-workshop.git
 * Select Parent directory to store the project and a short name
