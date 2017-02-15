@@ -1,6 +1,8 @@
 # Navigation
 
 ## View hierarchies and file structure
+Get a bird’s eye view of the whole project with Calls, Types and Includes hierarchies. This could also help with better understanding of the libraries structure.
+
 * Go to _GameWidget.cpp_
 * To view the outline of the file call file structure via `⌘7` / `Alt+7` (to open in a separate pop-up use `⌘F12` / `Ctrl+F12`)
     * Sort by type

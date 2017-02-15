@@ -1,6 +1,8 @@
 # Navigation
     
 ## Navigate to somewhere you've already been
+To quickly come back to code locations you've already visited use the following:
+
 * To quickly jump to some recent file, get the list of recently files via `⌘E` / `Ctrl+E`
 * To quickly jump to some file edited recently, get the list of recently edited files via `⇧⌘E` / `Shift+Ctrl+E`
 * Use bookmarks to mark important places
