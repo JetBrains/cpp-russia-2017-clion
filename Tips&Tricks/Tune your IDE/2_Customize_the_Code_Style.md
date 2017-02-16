@@ -11,9 +11,6 @@ Following coding style guidelines is important from many aspects: readability, m
 What file extensions do you typically use? _.cpp/.h_, _.cpp/.hpp_, _.cxx/.hxx_?
 * Add and move the most often used options to the top in _Settings | Editor | Code Style | C/C++_, _New File Etensions_ tab
 
-Code generation in CLion follows the formatting rules described in _Settings | Editor | Code Style | C/C++_. In addition to general indent, wrapping and braces rules, find some more advanced:
-* Check _Code Generation_ tab to tune advanced settings used when CLion generates some code for you. Typical example is prefix for getter/setter – would you like it to be get/set or get_/set_?
-
 _Tip1_ When you change settings that affect code, CLion gives you an immediate preview, highlighting the line affected by the most recent change.
 
 _Tip2_ Select the code, press `Alt+Enter`, select _Adjust code style settings_ and you'll be able to adjust settings applicable to this particular piece of code.
