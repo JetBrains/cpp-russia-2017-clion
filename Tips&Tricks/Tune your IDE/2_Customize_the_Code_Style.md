@@ -20,7 +20,8 @@ _Tip2_ Select the code, press `Alt+Enter`, select _Adjust code style settings_ a
 
 _Tip3_ How about using Google or Qt coding standards on your project? You can inherit the settings from one of the predefined code style. Select _Set from_ in the right upper corner of the settings window and select the preferred style from the list.
 
-Ok, you get the settings configured. Now let's share them with the team!
+### Share settings
+Ok, you get the settings configured! Now let's share them with the team!
 * Export settings
     * Go to _File | Export Settings_
     * Select if you'd like to export only Code Style settings or smth else as well (for example, live templates or look and feel settings)
