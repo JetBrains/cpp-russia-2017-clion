@@ -18,7 +18,7 @@ struct GameObject {
 
     void calc(int msec);
 
-    virtual void draw(QPainter& p)= 0;
+    virtual void draw(QPainter& p) const = 0;
 
     virtual QRectF aabb() const = 0;
 

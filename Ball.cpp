@@ -6,7 +6,7 @@
 Ball::Ball(const QPointF& pos, const QPointF& speed) :
         GameObject(pos, speed) {}
 
-void Ball::draw(QPainter& p) {
+void Ball::draw(QPainter& p) const {
     p.setBrush(Qt::red);
     p.drawEllipse(getPos(), 10, 10);
 }

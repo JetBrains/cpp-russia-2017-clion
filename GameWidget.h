@@ -1,26 +1,20 @@
 #pragma once
 
-
 #include <QWidget>
-#include "Ball.h"
-#include "Brick.h"
+#include <memory>
+
+struct GameState;
 
 //TODO: Document class
 struct GameWidget : public QWidget {
     GameWidget(QWidget* parent);
-
-    void calc(int ms);
+    ~GameWidget();
 
 protected:
     void paintEvent(QPaintEvent* event) override;
-
     void keyPressEvent(QKeyEvent* event) override;
 
 private:
-    Ball b_;
-    std::vector<Brick> bricks_;
-    Brick paddle_;
-
-    void processCollisions();
+    std::unique_ptr<GameState> state_;
 };
 
