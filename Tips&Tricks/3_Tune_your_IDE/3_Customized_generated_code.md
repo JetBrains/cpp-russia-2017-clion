@@ -2,7 +2,7 @@
 
 ## Customized generated code
 In CLion you can create file from templates. For example, a C++ class:
-* Select Project view area, press `⌘N` / `Alt+Insert`, type the name for your new class, for example, _MyCLass_, press Ok
+* Select Project view area, press `⌘N` / `Alt+Insert`, select _C++ class_, type the name for your new class, for example, _MyCLass_, press Ok
 * Note, the newly generated files are not empty.
 
 You can customize the generated content under _Settings | Editor | File and Code Templates_. For example, you prefer `#pragma once` at the beginning of your header files. Do the following:
