@@ -52,18 +52,14 @@ QRect GameState::getField() const {
     return field_;
 }
 
-Ball GameState::getBall() const {
-    return ball_;
-}
-
-const std::vector<Brick> &GameState::getBricks() const {
-    return bricks_;
-}
-
-Brick GameState::getPaddle() const {
-    return paddle_;
-}
-
 int GameState::getScore() const {
     return score_;
+}
+
+void GameState::draw(QPainter &painter) const {
+    ball_.draw(painter);
+    for (auto &&brick : bricks_) {
+        brick.draw(painter);
+    }
+    paddle_.draw(painter);
 }

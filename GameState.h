@@ -12,9 +12,7 @@ public:
 
     QRect getField() const;
 
-    Ball getBall() const;
-    Brick getPaddle() const;
-    const std::vector<Brick> &getBricks() const;
+    void draw(QPainter& painter) const;
 
     int getScore() const;
 

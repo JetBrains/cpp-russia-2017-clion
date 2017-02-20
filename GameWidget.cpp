@@ -19,11 +19,7 @@ protected:
         QWidget::paintEvent(event);
 
         QPainter painter(this);
-        getState()->getBall().draw(painter);
-        for (auto &&brick : getState()->getBricks()) {
-            brick.draw(painter);
-        }
-        getState()->getPaddle().draw(painter);
+        getState()->draw(painter);
     }
 
 private:
