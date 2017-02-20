@@ -11,21 +11,29 @@ CollisionType getCollisionWithWalls(const Ball& b, const QRectF& bounding) {
 CollisionType getCollisionWithBrick(const Ball& b, const QRectF& brick) {
     auto ballBB = b.aabb();
     auto inters = ballBB.intersected(brick);
-    if (inters.isEmpty())
+    if (inters.isEmpty()) {
         return None;
-    else if (inters.width() > inters.height()) {
-        return inters.center().y() < ballBB.center().y() ? Top : Bottom;
-    } else {
-        return inters.center().x() < ballBB.center().x() ? Left : Right;
+    }
+    else {
+        if (inters.width() > inters.height()){
+            if(inters.center().y()<ballBB.center().y()) {
+                return Top;
+            }
+            else
+            {
+                return Bottom;
+            }
+        } else if(ballBB.center().x()>inters.center().x()) {
+            return Left;
+        } else return Right;
     }
 }
 
 bool applyCollision(Ball& b, CollisionType type) {
     int mulX = 1, mulY = 1;
 
+    //todo: fix compiler warning
     switch (type) {
-        case None:
-            break;
         case Left:
             if (b.getSpeed().x() < 0) mulX = -1;
             break;
@@ -40,6 +48,12 @@ bool applyCollision(Ball& b, CollisionType type) {
             break;
     }
 
-    b.setSpeed(QPointF(b.getSpeed().x() * mulX, b.getSpeed().y() * mulY));
-    return mulX == -1 || mulY == -1;
+    // Fixme: this function doesn't work for some reason
+    if (mulX == -1 && mulY == -1) {
+        b.setSpeed(QPointF(b.getSpeed().x() * mulX, b.getSpeed().y() * mulY));
+        return true;
+    }
+    else {
+        return false;
+    }
 }
