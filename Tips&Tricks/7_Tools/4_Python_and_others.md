@@ -10,3 +10,5 @@ Use _Settings | Plugins_ to install additional plugins to extend CLion's functio
 * Unreal Engine 4 SDK Support
 * Lua
 * etc.
+
+_Tip_ These scripts are written in markdown format in CLion as well thanks to Markdown support plugin provided by JetBrains. It supports Markdown syntax and allows previwing the result in the split screen mode just as you type.
