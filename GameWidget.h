@@ -4,6 +4,8 @@
 #include <memory>
 
 struct GameState;
+struct CanvasWidget;
+struct QLabel;
 
 //TODO: Document class
 struct GameWidget : public QWidget {
@@ -11,10 +13,15 @@ struct GameWidget : public QWidget {
     ~GameWidget();
 
 protected:
-    void paintEvent(QPaintEvent* event) override;
     void keyPressEvent(QKeyEvent* event) override;
 
 private:
+        void resetState();
+
+private:
     std::unique_ptr<GameState> state_;
+
+    friend struct CanvasWidget;
+    CanvasWidget *canvas_;
 };
 

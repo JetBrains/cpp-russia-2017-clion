@@ -16,6 +16,8 @@ public:
     Brick getPaddle() const;
     const std::vector<Brick> &getBricks() const;
 
+    int getScore() const;
+
 private:
     void processCollisions();
 
@@ -25,6 +27,8 @@ private:
     Ball ball_;
     std::vector<Brick> bricks_;
     Brick paddle_;
+
+    int score_;
 };
 
 

@@ -5,7 +5,8 @@
 GameState::GameState(int fieldWidth, int fieldHeight)
         : field_(0, 0, fieldWidth, fieldHeight),
           ball_(QPointF(field_.width() / 2, field_.height() - 30), QPointF(200, -200)),
-          paddle_(QPointF(field_.width() / 2, field_.height() - 10), 60, 20) {
+          paddle_(QPointF(field_.width() / 2, field_.height() - 10), 60, 20),
+          score_(0) {
     int ROWS = 4, COLS = 5;
     int SPACING = 10;
     int BRICK_WIDTH = (field_.width() - SPACING) / COLS - SPACING, BRICK_HEIGHT = 30;
@@ -23,7 +24,7 @@ GameState::GameState(int fieldWidth, int fieldHeight)
 void GameState::calc(int ms) {
     processCollisions();
     ball_.calc(ms);
-    for (auto&& brick : bricks_) {
+    for (auto &&brick : bricks_) {
         brick.calc(ms);
     }
     paddle_.calc(ms);
@@ -39,6 +40,7 @@ void GameState::processCollisions() {
     for (auto iter = bricks_.begin(); iter != bricks_.end(); ++iter) {
         if (applyCollision(ball_, getCollisionWithBrick(ball_, iter->aabb()))) {
             bricks_.erase(iter);
+            score_ += 1;
             return;
         }
     }
@@ -60,4 +62,8 @@ const std::vector<Brick> &GameState::getBricks() const {
 
 Brick GameState::getPaddle() const {
     return paddle_;
+}
+
+int GameState::getScore() const {
+    return score_;
 }
