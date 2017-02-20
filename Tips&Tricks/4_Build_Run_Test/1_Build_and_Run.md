@@ -1,12 +1,11 @@
 # Build, Run, Test
 
 ## Build and Run
-There are a few useful shortcuts to build and run your app in CLion:
-* Build with `⌘F9` / `Ctrl+F9`
+Let's build and run this game. A few useful shortcuts:
+* Build this app with `⌘F9` / `Ctrl+F9`
 * Run currently selected configuration with `^R` / `Shift+F10`
 * Select configuration and run it with `^⌥R` / `Shift+Alt+F10`
-* Debug currently selected configuration with `^D` / `Shift+F9`
-* Select configuration and debug it with `^⌥D` / `Shift+Alt+F9`
+    * Select _arkan9Test_ to run unit tests
 
 A few more words about configurations:
 * When you open this project you may find a few configurations already created. CLion creates a configuration per each CMake target defined in your project. That's why you have _arkan9_(main app configuration) or _arkan9Test_ (unit tests configuration).
