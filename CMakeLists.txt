@@ -14,4 +14,4 @@ target_link_libraries(arkan9 arkan9Lib)
 
 add_subdirectory(3rdparty/googletest)
 add_executable(arkan9Test test.cpp)
-target_link_libraries(arkan9Test gtest arkan9Lib)
+target_link_libraries(arkan9Test gtest_main arkan9Lib)
