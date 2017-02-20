@@ -1,4 +1,5 @@
 #include "Brick.h"
+#include <QPainter>
 
 Brick::Brick(const QPointF &pos, double width, double height) :
         GameObject(pos, QPointF()), width_(width), height_(height) {}

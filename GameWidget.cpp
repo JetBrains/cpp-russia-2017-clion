@@ -5,6 +5,7 @@
 #include <QBoxLayout>
 #include <QPushButton>
 #include <QLabel>
+#include <QPainter>
 
 #include "GameState.h"
 

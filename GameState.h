@@ -2,6 +2,7 @@
 
 #include "Ball.h"
 #include "Brick.h"
+#include <vector>
 
 struct GameState {
     GameState(int fieldWidth, int fieldHeight);
