@@ -11,6 +11,7 @@ Simply get a copy of the repo – clone or download straight. You can also use C
 * Paste repository URL: https://github.com/JetBrains/clion-workshop.git
 * Select Parent directory to store the project and a short name
 * Agree to open the project in CLion right after downloading the repo
+* You should provide the path to your Qt5 copy to CMake (e.g. add `-DCMAKE_PREFIX_PATH=/path/to/qt5` to _Settings | Build, execution, deployment | CMake | CMake options_) 
 
 How the exercises are structured:
 
