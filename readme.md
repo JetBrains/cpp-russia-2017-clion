@@ -16,6 +16,12 @@ Simply get a copy of the repo – clone or download straight. You can also use C
 How the exercises are structured:
 
 * `Navigation`: Learn how to navigate around the codebase using CLion, looking at Go To, Find Usages, File Structure, various Hierarchies and more.
+* `Documentation`: Learn how to inspect and create new code documentation.
+* `Tune your IDE`: Find information about the handful options and settings to make the IDE match your personal preferences. This covers IDE themes, keymaps, Code Style settings and generated code customizations.
+* `Build, Run, Test`: Check exercises to see how you can build, run and test your code in CLion. This covers tests code generation and built-in test runner.
+* `Code quality`: Looks at the powerful features CLion provides to help you find and eliminate bugs, by improving the readability of the code, providing  tools for debugging the code and catching possible issues in your code on the fly with the code analysis.
+* `Create new code`: Check these exercises to learn how to quickly create new code with CLion and refactor it.
+* `Tools`: useful tools, like CMake, Terminal, External tools, VCS and other languages support (Python and more).
 
 ## Open Source
 
