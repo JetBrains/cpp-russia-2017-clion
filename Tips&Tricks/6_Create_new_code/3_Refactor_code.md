@@ -1,7 +1,7 @@
 # Create new code
 
 ## Refactor: moves class members to a base class
-Assume ,that at this point we realize that _color__ should be located in _Ball_ class instead. 
+Assume, that at this point we realize that _color__ should be located in _Ball_ class instead. 
 * Place a cursor on _setColor__
 * Call refactor this menu to get the full lists of refactorings at the cursor location via `^T` / `Shift+Ctrl+Alt+T`
 * Select _Pull Members Up_
