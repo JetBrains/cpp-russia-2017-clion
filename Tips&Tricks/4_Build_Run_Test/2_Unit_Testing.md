@@ -6,7 +6,7 @@ When you want the possible defects to be detected as early as possible, or when 
 Perform unit testing with ease, as CLion integrates with Google Test, one of the most popular C++ testing frameworks.
 
 ### Run
-* Select configuration (_arkan9Test_) and run it with `^⌥R` / `Shift+Alt+F10`
+* Select configuration (_arkanoidTest_) and run it with `^⌥R` / `Shift+Alt+F10`
     * _Collisions.Right_ and _Collisions.Left_ will pass
     * _Collisions.Apply_ will fail
     * Built-in test runner with the results will be opened

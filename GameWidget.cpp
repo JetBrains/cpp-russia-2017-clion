@@ -9,8 +9,8 @@
 
 #include "GameState.h"
 
-const int WND_WIDTH = 800;
-const int WND_HEIGHT = 600;
+#define  WND_WIDTH 800
+#define WND_HEIGHT (WND_WIDTH * 3 / 4)
 
 struct CanvasWidget : QWidget {
     CanvasWidget(GameWidget *parent) : QWidget(parent) {}

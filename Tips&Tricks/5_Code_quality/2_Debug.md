@@ -3,13 +3,13 @@ This code has a bug. In _Collisions.cpp_ in _applyCollision_ the condition of th
 
 ## Test and debug
 Let's run the unit tests again:
-* Select configuration (_arkan9Test_) and run it with `^⌥R` / `Shift+Alt+F10`
+* Select configuration (_arkanoidTest_) and run it with `^⌥R` / `Shift+Alt+F10`
 
 Notice, there is one tests that fails - _Collisions.Apply_. We'll now try to debug it:
 
 * Toggle a breakpoint at _applyCollision_ call in the _Collisions.Apply_ test
 * Debug currently selected configuration with `^D` / `Shift+F9`
-* Select configuration (_arkan9Test_) and debug it with `^⌥D` / `Shift+Alt+F9`
+* Select configuration (_arkanoidTest_) and debug it with `^⌥D` / `Shift+Alt+F9`
 * Execution will stop at a breakpoint
 
 ### Variables view and Evaluate expressions

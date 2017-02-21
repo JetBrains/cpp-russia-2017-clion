@@ -4,7 +4,7 @@ In this part let's implement additional functionality to our game – add extra 
 
 ## Create new class
 * Select Project view area, press `⌘N` / `Alt+Insert`, select _C++ class_, type the name for your new class - _BlinkingBall_
-* Check _arkan9Lib_ target in CMakeLists.txt file is going to be updated, and then press Ok
+* Check _arkanoidLib_ target in CMakeLists.txt file is going to be updated, and then press Ok
 
 ## Auto-import
 When you start using a symbol that is not yet imported, CLion will search and suggest adding the corresponding include:

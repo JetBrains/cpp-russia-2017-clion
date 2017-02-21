@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.6)
-project(arkan9)
+project(arkanoid)
 
 set(CMAKE_CXX_STANDARD 14)
 
 find_package(Qt5Widgets REQUIRED)
 
-add_library(arkan9Lib Ball.cpp Ball.h GameObject.cpp GameObject.h Brick.cpp Brick.h Collisions.cpp Collisions.h GameState.cpp GameState.h)
-target_link_libraries(arkan9Lib Qt5::Widgets)
+add_library(arkanoidLib Ball.cpp Ball.h GameObject.cpp GameObject.h Brick.cpp Brick.h Collisions.cpp Collisions.h GameState.cpp GameState.h)
+target_link_libraries(arkanoidLib Qt5::Widgets)
 
 set(SOURCE_FILES main.cpp GameWidget.cpp GameWidget.h)
-add_executable(arkan9 ${SOURCE_FILES})
-target_link_libraries(arkan9 arkan9Lib)
+add_executable(arkanoid ${SOURCE_FILES})
+target_link_libraries(arkanoid arkanoidLib)
 
 add_subdirectory(3rdparty/googletest)
-add_executable(arkan9Test test.cpp)
-target_link_libraries(arkan9Test gtest_main arkan9Lib)
+add_executable(arkanoidTest test.cpp)
+target_link_libraries(arkanoidTest gtest_main arkanoidLib)
