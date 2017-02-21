@@ -1,7 +1,7 @@
 # Tools
 
 ## Python and others
-CLion includes support for languages other than C and C++. Build-in support is provided, for example, for:
+CLion includes support for languages other than C and C++. Built-in support is provided, for example, for:
 * Python, via PyCharm Community Edition for CLion plugin
 * JavaScript, HTML, CSS, etc.
 
