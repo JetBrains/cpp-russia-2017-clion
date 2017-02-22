@@ -10,7 +10,7 @@ When you meet a new code base, various tools helping you to know the code better
     * You can see that it's inherited from the _QWidget_, click on it to see the details of the class and navigate through the hierarchy via next/back arrows/buttons
     * _TODO_ comment is also included
 * To know function signature, place a caret on a function and invoke Quick Documentation
-    * Go to _applyCollision_ symbol in _GameWidget.cpp_
+    * Go to _applyCollision_ symbol in _GameState.cpp_
     * Use `F1` / `Ctrl+Q` to see the documentation
     * Note, some additional information is shown in the pop-up - Doxygen comment preview. That means that if the code is properly documented you can read the documentation while going through the code base (without invoking Doxygen docs generation)
 
