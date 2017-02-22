@@ -9,4 +9,4 @@ To understand how the types and other declarations are used through the code bas
     * Group by file structure
     * Try merging usages from the same line
     * Turn on the preview or autoscroll to source
-    * Use `⌥⌘ Up/Down` / `Ctrl+Alt+Up/Down` to navigate to the next/previous occurence
+    * Use `⌥⌘ Up/Down` / `Ctrl+Alt+Up/Down` to navigate to the next/previous occurrence

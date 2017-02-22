@@ -2,6 +2,7 @@
 
 ## Navigate to something you know
 If you already know a file name, symbol or class name you'd like to jump to, use the following:
+
 * Use `⇧⌘O` / `Shift+Ctrl+N` to navigate to the file by its name, go to _GameWidget.cpp_
     * Type less - use CamelHumps: type _GW_
     * Type less - try wild cards: _*.cpp_

@@ -8,6 +8,7 @@ In this part let's implement additional functionality to our game – add extra 
 
 ## Auto-import
 When you start using a symbol that is not yet imported, CLion will search and suggest adding the corresponding include:
+
 * Inherit _BlinkingBall_ from _Ball_
 * The file is not missing the include of _Ball.h_ – CLion highlights the _Ball_ symbol and suggest an auto-import
 * Use `⌥Enter` / `Alt+Enter` to get _Ball.h_ included automatically

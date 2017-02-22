@@ -2,6 +2,7 @@
 
 ## Readable code
 Reading the code is as much important as writing it. Let's see how Clion helps improve the readability of the code:
+
 * Go to _Collisions.cpp_ file via `⇧⌘O` / `Shift+Ctrl+N`
 
 ### Reformat
@@ -11,6 +12,7 @@ _Note_, the code will follow the rules described in _Settings | Editor | Code St
 
 ### Replace if statement with ternary if operator
 The shorter form of ternary operator is often easier to read than the full _if_ statement. That's why CLion suggests you to convert:
+
 * In function _getCollisionWithBrick_ find the _else_ branch
 * Replace `if(inters.center().y()<ballBB.center().y())` with ternary operator:
     * Place a cursor there
@@ -20,4 +22,5 @@ The shorter form of ternary operator is often easier to read than the full _if_ 
 
 ### Merge nested if
 After you replace _if_ statements with ternary _if_ operator, you can now merge nested _if_ in _getCollisionWithBrick_ function:
+
 * Press `⌥Enter` / `Alt+Enter` and select _Merge If Else_

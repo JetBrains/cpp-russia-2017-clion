@@ -3,6 +3,7 @@ This code has a bug. In _Collisions.cpp_ in _applyCollision_ the condition of th
 
 ## Test and debug
 Let's run the unit tests again:
+
 * Select configuration (_arkanoidTest_) and run it with `^⌥R` / `Shift+Alt+F10`
 
 Notice, there is one tests that fails - _Collisions.Apply_. We'll now try to debug it:

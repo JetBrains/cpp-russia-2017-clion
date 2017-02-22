@@ -2,6 +2,7 @@
 
 ## Generate missing constructor
 Base class _Ball_ doesn't have a default constructor and, since there is no constructor defined for _BlinkingBall_, CLion highlights the code and reporting the error.
+
 * Press `⌥Enter` / `Alt+Enter` and select an option to create constructor that matches base class.
 * Now the proper constructor is generated
 

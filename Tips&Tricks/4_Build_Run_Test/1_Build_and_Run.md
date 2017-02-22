@@ -2,12 +2,14 @@
 
 ## Build and Run
 Let's build and run this game. A few useful shortcuts:
+
 * Build this app with `⌘F9` / `Ctrl+F9`
 * Run currently selected configuration with `^R` / `Shift+F10`
 * Select configuration and run it with `^⌥R` / `Shift+Alt+F10`
     * Select _arkanoidTest_ to run unit tests
 
 A few more words about configurations:
+
 * When you open this project you may find a few configurations already created. CLion creates a configuration per each CMake target defined in your project. That's why you have _arkanoid_(main app configuration) or _arkanoidTest_ (unit tests configuration).
 
 _Tip_ If you want CLion to stop currently running executable before launching it again, select _Single instance only_ setting in the configuration settings under _Run | Edit Configurations_

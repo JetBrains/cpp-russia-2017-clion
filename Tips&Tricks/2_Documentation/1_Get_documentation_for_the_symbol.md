@@ -16,11 +16,13 @@ When you meet a new code base, various tools helping you to know the code better
 
 ### Infer types
 Modern C++ allows you to avoid type names in many situations where they are excessive. However, reading the code is much easier when you can understand the type of the variable under caret.
+
 * Go to _getCollisionWithBrick_ function definition in _Collisions.cpp_ via `⌥⌘O` / `Shift+Ctrl+Alt+N` and type _gcwb_
 * Two local variable are defined and used in the function body: _ballBB_ and _inters_. What are they? Call Quick Documentation with `F1` / `Ctrl+Q` to learn the type of the variables declared as _auto_
 
 ### Get macros expansion
 Preprocessor macros can be tricky, defined one through another, so it's sometimes difficult to guess the final substitution. CLion can help you here:
+
 * Go to _GameWidget_ constructor definition in GameWidget.cpp (use `⌥⌘O` / `Shift+Ctrl+Alt+N` to navigate to symbol and type _gwi_, select function definition from the list)
 * _WND_HEIGHT_ and _WND_WIDTH_ macros are used in the code. Place a caret on _WND_HEIGHT_ and call Quick Documentation with `F1` / `Ctrl+Q` – macro definition and full expansion will be shown to you
 

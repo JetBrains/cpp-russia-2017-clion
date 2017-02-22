@@ -17,6 +17,7 @@ _Tip_ Google Test build/run configurations are created in CLion automatically if
 
 ### Test runner
 Inspect tests results in built-in test runner view:
+
 * Check the progress bar with the percentage of tests executed so far
 * Check the output stream of the tests
 * Inspect a tree view of all the tests, including the information about test status and test duration (_Collisions.Apply_ will fail after 1ms, others will pass in 0ms)
@@ -26,10 +27,10 @@ Inspect tests results in built-in test runner view:
 
 ### Create test
 Let's create a test:
+
 * Go to _test.cpp_ (use `⇧⌘O` / `Shift+Ctrl+N` to navigate to the file by its name)
 * Press `⌘N` / `Alt+Insert` to generate code
 * Select _generate test_, use _Collisions_ as test case name, _Top_ – as a test name
 * Add the following code as a test's body:
-`    ASSERT_EQ(getCollisionWithBrick(Ball(QPointF(2, 0), QPointF()), QRectF(2, -2, 20, -20)), Top);
-`
+`    ASSERT_EQ(getCollisionWithBrick(Ball(QPointF(2, 0), QPointF()), QRectF(2, -2, 20, -20)), Top);`
 * Run test via `^⇧R` / `Shift+Ctrl+F10`
