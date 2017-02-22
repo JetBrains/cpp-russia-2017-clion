@@ -6,7 +6,7 @@ Each exercise also introduces the keyboard shortcuts that can be used to work wi
 
 ## System requirements
 * Machine running under MacOS, Linux (64-bit) or Windows (64-bit). [Full requirements](https://www.jetbrains.com/help/clion/requirements-for-clion.html)
-* Pre-installed toolchains [Full lists](https://www.jetbrains.com/help/clion/requirements-for-clion.html)):
+* Pre-installed toolchains [Full lists](https://www.jetbrains.com/help/clion/requirements-for-clion.html):
     * GCC and G++ or Clang, for Windows – MinGW(MinGW-w64) or Cygwin
     * Make
 * [CLion 2016.3](https://www.jetbrains.com/clion/download/)
@@ -33,4 +33,4 @@ Simply get a copy of the repo – clone or download straight. You can also use C
 
 ## Open Source
 
-The workshop is Open Source, licensed under the Apache 2 license. If you would like to contribute to the workshop materials, please feel free to fork the repo and send us a pull request. Or if you have a comment, question, or suggestion for improvements, please [raise an issue](https://github.com/JetBrains/clion-workshop/issues).
+The workshop is Open Source, licensed under the Apache 2 license. If you would like to contribute to the workshop materials, please feel free to fork the repo and send us a pull request. Or if you have a comment, question, or suggestion for improvements, please [raise an issue](https://github.com/JetBrains/cpp-russia-2017-clion/issues).
