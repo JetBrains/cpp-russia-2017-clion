@@ -16,5 +16,5 @@ Get a bird’s eye view of the whole project with Calls, Types and Includes hier
 * Place a cursor on _GameWidget_ class name, use `^H` / `Ctrl+H` to view the Types hierarchy.
     * Change to supertypes hierarchy
     * Use it to understand how the Qt types inherit each other
-* Place a cursor on _processCollisions_, use `^⌥H` / `Ctrl+Alt+H` to view Call hierarchy
+* Place a cursor on _keyPressEvent_, use `^⌥H` / `Ctrl+Alt+H` to view Call hierarchy
     * Switch between Caller/Callee methods Hierarchy
