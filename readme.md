@@ -1,3 +1,5 @@
+[![obsolete JetBrains project](http://jb.gg/badges/obsolete.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 # CLion Workshop
 
 This project is created to help you learn about many of the features and productivity enhancements available in [CLion](https://jetbrains.com/clion). While it doesn't cover EVERY feature in CLion, it does give many, many useful tips and tricks to both beginners and long time users.
